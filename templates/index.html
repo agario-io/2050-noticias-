@@ -3,69 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake News Daily</title>
+    <title>Jornal Cavalcantence</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
-        <h1>GLOBO PLAY</h1>
-        <p>SUAS NOTÍCIAS BOSTILEIRAS DIÁRIAS!!!</p>
+        <h1>Jornal Cavalcantence</h1>
+        <p>Temos o objetivo de lhe dar acesso a livre informação da melhor maneira.</p>
     </header>
 
     <!-- Breaking News Ticker -->
     <div class="breaking-news">
         <marquee behavior="scroll" direction="left">
-            🚨 INTEGRALISMO NA SUA REGIÃO, CUIDADO HOMENS 🚨 | 🚨 INTEGRALISMO AVISTADO EM CAVALCANTE GOIÁS 🚨 | 🚨 CAVALCANTE GOIÁS AVISTOU 2050 INTEGRAIS 🚨
+            🚨 INFORMAÇÕES NEUTRAS SÃO ESCASAS 🚨 | 🚨 RECONHECA O VALOR JORNALÍSTICO DA NEUTRALIDADE 🚨 | 🚨 FAREMOS JUNTOS CAVALCANTE UMA REFERÊNCIA JORNALÍSTICA 🚨
         </marquee>
     </div>
 
     <!-- News Articles -->
     <div class="news-grid">
         <!-- Article 1 -->
-        <div class="news-card" onclick="rickroll()">
+        <div class="news-card">
             <img src="{{ url_for('static', filename='images/news1.jpg') }}" alt="News 1">
-            <h2>CUIDADO, HOMEM DESCOBRE QUE SEU FILHO É GAY DEPOIS DE JOGAR FREEFIRE</h2>
-            <p>"Eu vi ele jogando né, ele falou assin, 'nauh pae isso é jogu di tiru receba' aí eu falei né, 'vai trabalhar mlk' e ele ficou com aquelas viadagem de não querer ir trabalhar sabe?</p>
+            <h2>Olá, sou o fundador do site!</h2>
+            <p>"Meu nome é Pedro Costa Lima e te convido para fazer parte do nosso projeto jornalístico!</p>
         </div>
 
         <!-- Article 2 -->
-        <div class="news-card" onclick="rickroll()">
+        <div class="news-card">
             <img src="{{ url_for('static', filename='images/news2.jpg') }}" alt="News 2">
-            <h2>GANGUE DE SCANDINAVOS QUER FUNDAR IGREJA PROTEX EM CAVALCANTE</h2>
-            <p>Cuidado, foi avistado um grupo de... oxe la ele oque é scandinavo, seóloko coisa de fim de mundo kkkkkkjkjkjkjkjjkjk, povo podia ta falando do meu flamengo.</p>
+            <h2>Todo o nosso site foi programado por IA!</h2>
+            <p>Apesar da má fama recente da inteligência artificial, esta pode ser usada como uma ferramenta extremamente potente para diversos projetos diferentes.</p>
         </div>
 
-        <!-- Add 8 more articles following the same structure -->
-        <div class="news-card" onclick="rickroll()">
+        <!-- Article 3 -->
+        <div class="news-card">
             <img src="{{ url_for('static', filename='images/news3.jpg') }}" alt="News 3">
-            <h2>CAVALCANTE FOI CATEGORIZADA A CIDADE MAIS POBRE DO GOIÁS</h2></h2>
-            <p>GOIÁS JÁ É FUDIDO PRA PORRA, NOIS TA NA MERDA MESMO KKKKKKKKKKKKKKKK</p>
+            <h2>Precisamos de acesso a informação neutra.</h2>
+            <p>A neutralidade em uma informação não apenas remove qualquer pudor partidário em uma noticia tal como exercita o pensamento crítico do leitor.</p>
         </div>
 
+        <!-- Add more articles following the same structure -->
     </div>
-    
-     <div class="breaking-news">
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
         <marquee behavior="scroll" direction="left">
-            🚨 GNÓSTICOS NA SUA REGIÃO, CUIDADO HOMENS 🚨 | 🚨 GNÓSTICOS AVISTADOS EM CAVALCANTE GOIÁS 🚨 | 🚨 CAVALCANTE GOIÁS AVISTOU 2050 GNÓSTICOS 🚨
+            🚨 INFORMAÇÕES LIVRES SÃO ESCASAS 🚨 | 🚨 RECONHECA O VALOR JORNALÍSTICO DA NEUTRALIDADE 🚨 | 🚨 FAREMOS JUNTOS CAVALCANTE UMA REFERÊNCIA JORNALÍSTICA 🚨
         </marquee>
     </div>
 
-
     <!-- Footer -->
     <footer>
-        <p>&copy; HorseCum Corporation. All rights reserved.</p>
+        <p>&copy; Grupo Magna Corp. All rights reserved.</p>
     </footer>
-
-    <!-- Rickroll Script -->
-    <script>
-        function rickroll() {
-            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-        }
-
-        // Rickroll all clickable elements
-        document.querySelectorAll('a, button, .news-card').forEach(element => {
-            element.addEventListener('click', rickroll);
-        });
-    </script>
 </body>
 </html>
